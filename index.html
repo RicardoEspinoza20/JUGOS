@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUGUERÍA FÁTIMA</title>
+</head>
+<body>
+
+    <!-- ENCABEZADO PRINCIPAL SEMÁNTICO -->
+    <header style="background-image: url(encabezado1.jpg);background-size: cover; background-position: center; height: 200px;">
+        <center>
+        <h1 style="font-size: 40px; text-align: center;">JUGUERIA "FÁTIMA"</h1>
+        <p style="font-size: 20px; text-align: center;">"Tu dosis diaria de frescura. Jugos 100% fruta. ¡Pide el tuyo!"</p>
+        </center>
+        
+
+        <!-- NAVEGACIÓN SEMÁNTICA -->
+        <nav>
+            <ul style="list-style-type: none; display: flex; gap: 90px; padding-left:90px;">
+                    <li><a href="#MENU" style="font-size: 28px; text-decoration: none;"><b>MENU Y PRECIOS</b></a></li>
+                    <li><a href="#PEDIDO" style="font-size: 28px; text-decoration: none;"><b>REALIZAR PEDIDO</b></a></li>
+                    <li><a href="#VIDEOS Y FOTOS" style="font-size: 28px; text-decoration: none;"><b>VIDEOS Y FOTOS</b></a></li>
+                    <li><a href="#PROMOCIONES" style="font-size: 28px; text-decoration: none;"><b>PROMOCIONES</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN 1: TABLA DE PRODUCTOS Y BOTONES DE CONTROL DE ACCIÓN -->
+        <section id="MENU">
+            <body style="background-image: url(cuerpo1.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+            <h2>Carta de Jugos y Batidos</h2>
+            <p>Consulta nuestra variedad de bebidas elaboradas con fruta fresca de estación:</p>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Tabla General de Precios y Sabores</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Bebida / Descripción</th>
+                        <th scope="col">Tamaño</th>
+                        <th scope="col">Precio (S/.)</th>
+                        <th scope="col">Controles / Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JUG-001</td>
+                        <td>
+                            <img src="SURTIDO 2.jpg" alt="SURTIDO" width="90" height="50">
+                        </td>
+                        <td>Jugo Surtido Especial (Papaya, Plátano y Fresa)</td>
+                        <td>Mediano (1 Litro)</td>
+                        <td>S/. 10.00</td>
+                        <td>
+                            <!-- Botones de control para interactuar con la fila -->
+                            <button type="button" onclick="alert('¡Jugo Surtido agregado al pedido rápido!')">Pedir</button>
+                            <button type="button" onclick="alert('Ingredientes: Papaya fresca, plátano de seda, fresas seleccionadas y leche o agua.')"> Ingredientes</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JUG-002</td>
+                        <td>
+                            <img src="NARANJA 2.jpg" alt="NARANJA width="50" height="50">
+                        </td>
+                        <td>Jugo de Naranja (agua, miel, hielo)</td>
+                        <td>Grande (Vaso 500ml)</td>
+                        <td>S/. 9.00</td>
+                        <td>
+                            <button type="button" onclick="alert('¡Extracto Energizante agregado al pedido rápido!')">Pedir</button>
+                            <button type="button" onclick="alert('Ingredientes: Zanahoria orgánica, beterraga fresca y zumo puro de naranja exprimida.')">Ingredientes</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JUG-003</td>
+                        <td>
+                            <img src="ESPECIAL.jpg" alt="ESPECIAL" width="90" height="50">
+                        </td>
+                        <td>Jugo Especial (leche, huevo y algarrobina)</td>
+                        <td>Personal (Vaso 400ml)</td>
+                        <td>S/. 9.00</td>
+                        <td>
+                            <button type="button" onclick="alert('¡Batido Detox agregado al pedido rápido!')">Pedir</button>
+                            <button type="button" onclick="alert('Ingredientes: Espinaca tierna, trozos de piña golden, manzana verde y agua de coco.')">Ingredientes</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JUG-004</td>
+                        <td>
+                            <img src="PAPAYA 2.jpg" alt="PAPAYA" width="90" height="50">
+                        </td>
+                        <td>Jugo Papaya (gotas de limon, hielo, leche)</td>
+                        <td>Mediano (1 Litro)</td>
+                        <td>S/. 6.00</td>
+                        <td>
+                            <!-- Botones de control para interactuar con la fila -->
+                            <button type="button" onclick="alert('¡Jugo Surtido agregado al pedido rápido!')">Pedir</button>
+                            <button type="button" onclick="alert('Ingredientes: Papaya fresca, plátano de seda, fresas seleccionadas y leche o agua.')">Ingredientes</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JUG-005</td>
+                        <td>
+                            <img src="PIÑA1.jpg" alt="PIÑA" width="90" height="50">
+                        </td>
+                        <td>Jugo Piña (Jengibre, limon, agua de coco)</td>
+                        <td>Mediano (1 Litro)</td>
+                        <td>S/. 5.00</td>
+                        <td>
+                            <!-- Botones de control para interactuar con la fila -->
+                            <button type="button" onclick="alert('¡Jugo Piña agregado al pedido rápido!')">Pedir</button>
+                            <button type="button" onclick="alert('Ingredientes: Jengibre, limon, agua de coco.')">Ingredientes</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 2: FORMULARIO DE PEDIDOS CON BOTONES DE CONTROL -->
+        <section id="PEDIDO">
+            <h2>Pedidos Personalizados</h2>
+            <p>Personaliza tu jugo favorito o solicita un pedido para llevar a casa:</p>
+
+            <article>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Formulario de Pedido Personalizado</legend>
+                        
+                        <br>
+                        <label for="cliente"><b>Nombre del Cliente:</b></label><br>
+                        <input type="text" id="cliente" name="cliente" required placeholder="Ej: María Gómez">
+                        <br><br>
+
+                        <label for="bebida_sel"><b>Seleccione su Bebida Base:</b></label><br>
+                        <select id="bebida_sel" name="bebida_sel" required>
+                            <option value="">-- Elija una opción --</option>
+                            <option value="surtido">Jugo Surtido Especial</option>
+                            <option value="naranja">Jugo Naranja</option>
+                            <option value="batido">Jugo Especial</option>
+                            <option value="papaya">Jugo Papaya</option>
+                            <option value="piña">Jugo Piña</option>
+                        </select>
+                        <br><br>
+
+                        <label for="base"><b>¿Desea preparar con agua o con leche?</b></label><br>
+                        <input type="radio" id="agua" name="base" value="agua" checked> <label for="agua">Con Agua</label>
+                        <input type="radio" id="leche" name="base" value="leche"> <label for="leche">Con Leche</label>
+                        <br><br>
+
+                        <label for="azucar"><b>Nivel de Azúcar o Dulzor:</b></label><br>
+                        <select id="azucar" name="azucar">
+                            <option value="normal">Azúcar normal</option>
+                            <option value="poca">Poca azúcar</option>
+                            <option value="miel">Cambiar por Miel de Abeja (+S/. 3.00)</option>
+                            <option value="sin">Sin azúcar (Natural)</option>
+                        </select>
+                        <br><br>
+
+                        <label for="cantidad"><b>Cantidad de Vasos:</b></label><br>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                        <br><br>
+
+                        <!-- Botones de control principales del formulario -->
+                        <button type="submit">Enviar Pedido</button>
+                        <button type="reset">Limpiar Formulario</button>
+                        <input type="button" value="Cancelar Operación" onclick="alert('Operación cancelada por el usuario.')">
+
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 3: MULTIMEDIA (VIDEOS E IMÁGENES) -->
+        <section id="VIDEOS Y FOTOS">
+            <h2>Sección Multimedia de la Juguería</h2>
+            <p>Mira cómo preparamos nuestros extractos frescos y conoce nuestra barra principal de frutas.</p>
+
+            <!-- Artículo de Video Semántico con controles nativos -->
+            <article>
+                <h3>Video: Preparación de Jugos Naturales</h3>
+                <video controls width="400">
+                    <source src= "jugo nutritivo.mp4" type="video/mp4">
+                </video>
+                <p>Demostración del licuado de jugo nutritivo.</p>
+            </article>
+
+            <br>
+
+            <!-- Galería Fotográfica Semántica con Figure y Figcaption -->
+            <tr>
+                <h3>FOTOS DE JUGOS</h3>
+                <table border="0" width="100%" cellpadding="6" cellspacing="0">
+                    <td width="25%" align="center" valign="top">
+                        <img src="SURTIDO.jpg" alt="Vasos de jugos variados" width="200" height="200">
+                        <figcaption>Fig.1: JUGO DE SURTIDO</figcaption>
+                     </td>
+                    <br>
+                    <td width="25%" align="center" valign="top">
+                        <img src="PAPAYA.jpg" alt="Frutas frescas de estación" width="200" height="200">
+                        <figcaption>Fig.2: JUGO DE PAPAYA</figcaption>
+                    </td>
+                    <br>
+                    <td width="25%" align="center" valign="top">
+                        <img src="NARANJA.jpg"  alt="Frutas frescas de estación" width="200" height="200">
+                        <figcaption>Fig.3: JUGO DE NARANJA</figcaption>
+                    </td>
+                    <br>
+                    <td width="25%" align="center" valign="top">
+                        <img src="PIÑA1.jpg"  alt="Frutas frescas de estación" width="200" height="200">
+                        <figcaption>Fig.3: JUGO DE PIÑA</figcaption>
+                    </td>
+                </table>
+            </tr>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- BARRA LATERAL (ASIDE) SEMÁNTICA -->
+    <aside id="PROMOCIONES">
+        <h3 style="font-size: 35px; text-align: center;" >PROMOCIONES Y HORARIOS</h3>
+        <h4 style="font-size: 20px; text-align: center;"><strong>Horario de Atención:</strong> 
+            Lunes a Sábado de 7:00 a.m. a 7:00 p.m.</h4>
+        <h5 style="font-size: 20px; text-align: center;">¡Promoción del día! Por la compra de 3 jugos grandes,
+            llévate un vaso de ensalada de frutas a mitad de precio.</h5>
+    </aside>
