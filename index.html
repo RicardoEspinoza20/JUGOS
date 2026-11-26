@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguería Fátima</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+        .aviso-frescura {
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+<!-- ENCABEZADO PRINCIPAL -->
+<header id="cabecera-principal" class="text-center d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+        <h1 class="titulo-animado fw-bold" style="font-size: clamp(3rem, 10vw, 5.2rem); line-height: 1.1; background: linear-gradient(45deg, #090909, #060606); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            JUGUERÍA "FÁTIMA"
+        </h1>
+        <p class="lead subtitulo-banner aviso-frescura mt-3" style="color: #5803e1; font-weight: bold; font-size: clamp(2.2rem, 2.8vw, 2.8rem);">
+            Tu dosis diaria de frescura. Jugos 100% fruta. ¡Pide el tuyo!
+        </p>
+    </div>
+</header>
+
+   <style>
+    .navbar-nav .nav-link-grande {
+        font-size: 1.15rem;
+        white-space: nowrap;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-nav .nav-link-grande {
+            font-size: 1.50rem;
+        }
+    }
+</style>
+
+<!-- NAVEGACIÓN CON BOOTSTRAP (Menú y enlaces) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow" aria-label="Navegación principal">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
+            <ul class="navbar-nav align-items-center gap-3 gap-lg-5">
+                <li class="nav-item"><a class="nav-link nav-link-grande fw-bold px-4 px-lg-5" href="#MENU"><span class="me-3">🍹</span>MENÚ Y PRECIOS</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-grande fw-bold px-4 px-lg-5" href="#PEDIDO"><span class="me-3">🍹</span>REALIZAR PEDIDO</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-grande fw-bold px-4 px-lg-5" href="#VIDEOS-FOTOS"><span class="me-3">🍹</span>VIDEOS Y FOTOS</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- CONTENIDO PRINCIPAL (Grid de Bootstrap: fila con columna principal y barra lateral en pantallas grandes) -->
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-8">
+
+                <!-- SECCIÓN 1: TABLA DE PRODUCTOS (Bootstrap Table + Botones) -->
+                <section id="MENU" class="caja-seccion mb-5">
+                    <h2 class="titulo-seccion">Carta de Jugos y Batidos</h2>
+                    <p class="text-muted">Consulta nuestra variedad de bebidas elaboradas con fruta fresca de estación:</p>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered align-middle text-center tabla-jugos">
+                            <caption class="caption-top text-center fs-4 fw-bold text-success">
+                                Tabla General de Precios y Sabores
+                            </caption>
+                            <thead class="table-warning">
+                                <tr>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Bebida / Descripción</th>
+                                    <th scope="col">Tamaño</th>
+                                    <th scope="col">Precio (S/.)</th>
+                                    <th scope="col">Controles / Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold text-nowrap">JUG-001</td>
+                                    <td><img src="SURTIDO 2.jpg" alt="Jugo Surtido Especial" class="img-thumbnail img-tabla"></td>
+                                    <td>Jugo Surtido Especial (Papaya, Plátano y Fresa)</td>
+                                    <td>Mediano</td>
+                                    <td class="precio-destacado text-nowrap">10.00</td>
+                                    <td>
+                                        <div class="d-flex flex-wrap justify-content-center gap-1">
+                                            <button type="button" class="btn btn-success btn-sm btn-animado" onclick="seleccionarBebida('surtido', 'Jugo Surtido Especial')">Pedir</button>
+                                            <button type="button" class="btn btn-outline-warning text-dark btn-sm" onclick="alert('Ingredientes: Papaya fresca, plátano de seda, fresas seleccionadas y leche o agua.')">Ingredientes</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-nowrap">JUG-002</td>
+                                    <td><img src="NARANJA 2.jpg" alt="Jugo de Naranja" class="img-thumbnail img-tabla"></td>
+                                    <td>Jugo de Naranja (agua, miel, hielo)</td>
+                                    <td>Grande</td>
+                                    <td class="precio-destacado text-nowrap">9.00</td>
+                                    <td>
+                                        <div class="d-flex flex-wrap justify-content-center gap-1">
+                                            <button type="button" class="btn btn-success btn-sm btn-animado" onclick="seleccionarBebida('naranja', 'Jugo de Naranja')">Pedir</button>
+                                            <button type="button" class="btn btn-outline-warning text-dark btn-sm" onclick="alert('Ingredientes: Zumo puro de naranja exprimida, miel y hielo.')">Ingredientes</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-nowrap">JUG-003</td>
+                                    <td><img src="ESPECIAL.jpg" alt="Jugo Especial" class="img-thumbnail img-tabla"></td>
+                                    <td>Jugo Especial (leche, huevo y algarrobina)</td>
+                                    <td>Personal</td>
+                                    <td class="precio-destacado text-nowrap">8.00</td>
+                                    <td>
+                                        <div class="d-flex flex-wrap justify-content-center gap-1">
+                                            <button type="button" class="btn btn-success btn-sm btn-animado" onclick="seleccionarBebida('batido', 'Jugo Especial')">Pedir</button>
+                                            <button type="button" class="btn btn-outline-warning text-dark btn-sm" onclick="alert('Ingredientes: Leche fresca, huevo, algarrobina y fruta de estación.')">Ingredientes</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-nowrap">JUG-004</td>
+                                    <td><img src="PAPAYA 2.jpg" alt="Jugo de Papaya" class="img-thumbnail img-tabla"></td>
+                                    <td>Jugo Papaya (gotas de limón, hielo, leche)</td>
+                                    <td>Mediano</td>
+                                    <td class="precio-destacado text-nowrap">7.00</td>
+                                    <td>
+                                        <div class="d-flex flex-wrap justify-content-center gap-1">
+                                            <button type="button" class="btn btn-success btn-sm btn-animado" onclick="seleccionarBebida('papaya', 'Jugo de Papaya')">Pedir</button>
+                                            <button type="button" class="btn btn-outline-warning text-dark btn-sm" onclick="alert('Ingredientes: Papaya fresca, gotas de limón, hielo y leche.')">Ingredientes</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-nowrap">JUG-005</td>
+                                    <td><img src="PIÑA1.jpg" alt="Jugo de Piña" class="img-thumbnail img-tabla"></td>
+                                    <td>Jugo Piña (Jengibre, limón, agua de coco)</td>
+                                    <td>Mediano</td>
+                                    <td class="precio-destacado text-nowrap">6.00</td>
+                                    <td>
+                                        <div class="d-flex flex-wrap justify-content-center gap-1">
+                                            <button type="button" class="btn btn-success btn-sm btn-animado" onclick="seleccionarBebida('piña', 'Jugo de Piña')">Pedir</button>
+                                            <button type="button" class="btn btn-outline-warning text-dark btn-sm" onclick="alert('Ingredientes: Piña golden, jengibre, limón y agua de coco.')">Ingredientes</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-nowrap">JUG-006</td>
+                                    <td><img src="FRESA1.jpg" alt="Jugo de Fresa" class="img-thumbnail img-tabla"></td>
+                                    <td>Jugo Fresa (leche, piña)</td>
+                                    <td>Grande</td>
+                                    <td class="precio-destacado text-nowrap">12.00</td>
+                                    <td>
+                                        <div class="d-flex flex-wrap justify-content-center gap-1">
+                                            <button type="button" class="btn btn-success btn-sm btn-animado" onclick="seleccionarBebida('fresa', 'Jugo de Fresa')">Pedir</button>
+                                            <button type="button" class="btn btn-outline-warning text-dark btn-sm" onclick="alert('Ingredientes: Fresas frescas, leche y trozos de piña.')">Ingredientes</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Paginación de Bootstrap -->
+                    <nav aria-label="Navegación de carta">
+                        <ul class="pagination justify-content-center mt-3 mb-0">
+                            <li class="page-item disabled"><a class="page-link" href="#MENU" tabindex="-1" aria-disabled="true">Anterior</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link bg-success border-success" href="#MENU">1</a></li>
+                            <li class="page-item"><a class="page-link text-success" href="#PEDIDO">2</a></li>
+                            <li class="page-item"><a class="page-link text-success" href="#VIDEOS-FOTOS">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <!-- SECCIÓN 2: FORMULARIO DE PEDIDOS (Grid + Formularios Bootstrap) -->
+                <section id="PEDIDO" class="caja-seccion mb-5">
+                    <h2 class="titulo-seccion">Pedidos Personalizados</h2>
+                    <p class="text-muted">Personaliza tu jugo favorito o solicita un pedido para llevar a casa:</p>
+
+                    <form id="formPedido" action="#" method="POST" class="row g-3 mt-2">
+                        <div class="col-md-6">
+                            <label for="cliente" class="form-label fw-bold">Nombre del Cliente:</label>
+                            <input type="text" class="form-control" id="cliente" name="cliente" required placeholder="Ej: María Gómez">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="bebida_sel" class="form-label fw-bold">Seleccione su Bebida Base:</label>
+                            <select id="bebida_sel" name="bebida_sel" class="form-select" required>
+                                <option value="">-- Elija una opción --</option>
+                                <option value="surtido">Jugo Surtido Especial</option>
+                                <option value="naranja">Jugo Naranja</option>
+                                <option value="batido">Jugo Especial</option>
+                                <option value="papaya">Jugo Papaya</option>
+                                <option value="piña">Jugo Piña</option>
+                                <option value="fresa">Jugo Fresa</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold d-block">¿Preparar con agua o leche?</label>
+                            <div class="form-check form-check-inline mt-1">
+                                <input class="form-check-input" type="radio" id="agua" name="base" value="agua" checked>
+                                <label class="form-check-label" for="agua">Con Agua</label>
+                            </div>
+                            <div class="form-check form-check-inline mt-1">
+                                <input class="form-check-input" type="radio" id="leche" name="base" value="leche">
+                                <label class="form-check-label" for="leche">Con Leche</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="azucar" class="form-label fw-bold">Nivel de Azúcar o Dulzor:</label>
+                            <select id="azucar" name="azucar" class="form-select">
+                                <option value="normal">Azúcar normal</option>
+                                <option value="poca">Poca azúcar</option>
+                                <option value="miel">Cambiar por Miel de Abeja (+S/. 3.00)</option>
+                                <option value="sin">Sin azúcar (Natural)</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cantidad" class="form-label fw-bold">Cantidad de Vasos:</label>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" value="1" required>
+                        </div>
+
+                        <div class="col-12 mt-4 d-flex flex-wrap gap-2">
+                            <button type="submit" class="btn btn-success btn-animado">ENVIAR PEDIDO</button>
+                            <button type="reset" class="btn btn-secondary">NUEVO PEDIDO</button>
+                            <button type="button" class="btn btn-danger" onclick="alert('Operación cancelada por el usuario.')">CANCELAR PEDIDO</button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- SECCIÓN 3: MULTIMEDIA (Grid de Bootstrap para galería) -->
+                <section id="VIDEOS-FOTOS" class="caja-seccion">
+                    <h2 class="titulo-seccion">Sección Multimedia de la Juguería</h2>
+                    <p class="text-muted">Mira cómo preparamos nuestros extractos frescos y conoce nuestra variedad de jugos.</p>
+
+                    <!-- Video Responsivo -->
+                    <div class="text-center my-4">
+                        <h3 class="h5 fw-bold mb-3">Video: Preparación de Jugos Naturales</h3>
+                        <div class="ratio ratio-16x9 mx-auto video-contenedor">
+                            <video controls preload="metadata">
+                                <source src="FRUTAS.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="small text-muted mt-2">Demostración del licuado de jugo nutritivo.</p>
+                    </div>
+
+                    <!-- Galería usando Grid de Bootstrap (row / col) -->
+                    <h3 class="h5 fw-bold text-center mt-5 mb-4">FOTOS DE JUGOS</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+                        <div class="col">
+                            <figure class="tarjeta-galeria h-100 mb-0">
+                                <img src="SURTIDO.jpg" alt="Jugo de Surtido" class="img-fluid rounded">
+                                <figcaption class="mt-2 fw-bold">Fig. 1: JUGO SURTIDO</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="tarjeta-galeria h-100 mb-0">
+                                <img src="NARANJA 2.jpg" alt="Jugo de Naranja" class="img-fluid rounded">
+                                <figcaption class="mt-2 fw-bold">Fig. 2: JUGO NARANJA</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="tarjeta-galeria h-100 mb-0">
+                                <img src="ESPECIAL.jpg" alt="Jugo Especial" class="img-fluid rounded">
+                                <figcaption class="mt-2 fw-bold">Fig. 3: JUGO ESPECIAL</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="tarjeta-galeria h-100 mb-0">
+                                <img src="PAPAYA.jpg" alt="Jugo de Papaya" class="img-fluid rounded">
+                                <figcaption class="mt-2 fw-bold">Fig. 4: JUGO PAPAYA</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="tarjeta-galeria h-100 mb-0">
+                                <img src="PIÑA1.jpg" alt="Jugo de Piña" class="img-fluid rounded">
+                                <figcaption class="mt-2 fw-bold">Fig. 5: JUGO PIÑA</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="tarjeta-galeria h-100 mb-0">
+                                <img src="FRESA1.jpg" alt="Jugo de Fresa" class="img-fluid rounded">
+                                <figcaption class="mt-2 fw-bold">Fig. 6: JUGO FRESA</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- BARRA LATERAL / PROMOCIONES (Alertas y Listas de Bootstrap) -->
+            <div class="col-lg-4">
+                <aside id="PROMOCIONES" class="caja-seccion sticky-lg-top" style="top: 84px;">
+                    <h3 class="titulo-seccion text-center">PROMOCIONES Y HORARIOS</h3>
+
+                    <div class="alert alert-warning text-center shadow-sm mt-3" role="alert">
+                        <h4 class="alert-heading fw-bold">🎉 ¡Promoción del día!</h4>
+                        <p class="mb-0">Por la compra de <strong>3 jugos grandes</strong>, llévate un vaso de ensalada de frutas a <strong>mitad de precio</strong>.</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush text-center mt-3 rounded">
+                        <li class="list-group-item"><strong>Horario de Atención:</strong> Lunes a Sábado de 7:00 a.m. a 7:00 p.m.</li>
+                        <li class="list-group-item"><strong>Delivery Gratis:</strong> En pedidos mayores a S/. 50.00 dentro del distrito.</li>
+                        <li class="list-group-item"><strong>WhatsApp:</strong> 952 940 346</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2026 Juguería "Fátima" - Frescura natural todos los días.</p>
+    </footer>
+
+    <!-- Script de Bootstrap para el menú móvil + interacción básica -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function seleccionarBebida(valor, nombre) {
+            const select = document.getElementById("bebida_sel");
+            const seccionPedido = document.getElementById("PEDIDO");
+            if (select) {
+                select.value = valor;
+            }
+            if (seccionPedido) {
+                seccionPedido.scrollIntoView({ behavior: "smooth" });
+            }
+            alert("¡" + nombre + " seleccionado en tu formulario de pedido!");
+        }
+
+        document.getElementById("formPedido").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const cliente = document.getElementById("cliente").value;
+            const cantidad = document.getElementById("cantidad").value;
+            alert("¡Gracias, " + cliente + "! Tu pedido de " + cantidad + " vaso(s) ha sido registrado.");
+        });
+    </script>
+</body>
+</html>
