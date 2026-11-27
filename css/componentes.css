@@ -1,0 +1,163 @@
+/* ==========================================================================
+   ESTILO.CSS - JUGUERÍA "FÁTIMA"
+   ========================================================================== */
+
+p {
+    line-height: 1.6;
+}
+
+/* 2. SELECTOR POR ID */
+#cabecera-principal {
+    background-image: linear-gradient(rgba(240, 234, 234, 0.194), rgba(240, 234, 234, 0.58)), url("encabezado1.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid #ff0000;
+}
+
+/* 3. SELECTORES POR CLASE */
+.caja-seccion {
+    background-color: rgba(244, 246, 246, 0.96);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(16, 5, 81, 0.08);
+    border-left: 6px solid #28a745;
+}
+
+.titulo-seccion {
+    color: #0a2186;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.precio-destacado {
+    font-weight: bold;
+    color: #79ea16;
+    font-size: 1.1rem;
+}
+
+/* 4. PROPIEDADES DE SELECTORES (Descendientes, hijos y atributos) */
+.tabla-jugos > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.tarjeta-galeria figcaption {
+    color: #1b5e20;
+    font-size: 0.95rem;
+}
+
+button[type="submit"] {
+    font-weight: 600;
+}
+
+/* 5. SELECTORES AVANZADOS: PSEUDO-ELEMENTOS (::before, ::after, ::first-letter) */
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 4px;
+    background-color: #ff9800;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.precio-destacado::before {
+    content: "S/. ";
+}
+
+.caja-seccion > p::first-letter {
+    font-size: 1.25rem;
+    font-weight: 100;
+    color: #1e7e34;
+}
+
+/* 6. SELECTORES AVANZADOS: PSEUDO-CLASES (:hover, :focus, :nth-child, :first-child) */
+.nav-link {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px);
+}
+
+.tabla-jugos tbody tr:nth-child(even) {
+    background-color: #fffdf5;
+}
+
+.tabla-jugos tbody tr:hover {
+    background-color: #fef3c7;
+    transition: background-color 0.25s ease;
+}
+
+#PROMOCIONES .list-group-item:first-child {
+    font-weight: 500;
+    background-color: #f8fff9;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+}
+
+/* 7. MAQUETACIÓN WEB Y TRANSICIONES / TRANSFORMACIONES */
+.img-tabla {
+    width: 100px;
+    height: 55px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-tabla:hover {
+    transform: scale(1.22);
+}
+
+.tarjeta-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tarjeta-galeria img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.tarjeta-galeria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.btn-animado {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-animado:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.video-contenedor {
+    max-width: 800px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-animado {
+    animation: entradaSuave 1s ease-out forwards;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.subtitulo-banner {
+    animation: entradaSuave 1.4s ease-out forwards;
+}

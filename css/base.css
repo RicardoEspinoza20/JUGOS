@@ -1,0 +1,9 @@
+body {
+    background-image: linear-gradient(rgba(238, 3, 3, 0.88), rgba(5, 239, 24, 0.88)), url("cuerpo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0874df;
+    margin: 0;
+}
